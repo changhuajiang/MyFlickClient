@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data>
+
+        <variable
+            name="photoRow"
+            type="changhua.com.myflickclient.model.PhotoItem"
+            />
+    </data>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="10" >
+
+        <ImageView
+            android:id="@+id/ownerAvatar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:imageUrl="@{photoRow.imageUrl}" />
+
+
+
+
+
+
+    </LinearLayout>
+</layout>
